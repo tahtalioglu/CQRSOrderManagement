@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRSOrderManagementNew.Core\CQRSOrderManagementNew.Core.csproj" />
+    <ProjectReference Include="..\CQRSOrderManagementNew.Data\CQRSOrderManagementNew.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,52 @@
+﻿@using CQRSOrderManagementNew.Model;
+@model IEnumerable<OrderModel>
+@{
+
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.OrderCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Amount)
+        </th>
+
+
+
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderCode)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Status)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Amount)
+            </td>
+
+
+
+            <td>@Html.ActionLink("Edit", "Edit", "Order", new { @id = item.OrderId }, new { @class = "btn btn-default" })</td>
+            <td>@Html.ActionLink("Delete", "Delete", "Order", new { @id = item.OrderId }, new { @class = "btn btn-default" })</td>
+        </tr>
+    }
+
+</table>
+

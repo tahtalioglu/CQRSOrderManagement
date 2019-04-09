@@ -1,0 +1,16 @@
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.deps.json
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.pdb
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.pdb
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.pdb
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.csprojAssemblyReference.cache
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.csproj.CoreCompileInputs.cache
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.AssemblyInfoInputs.cache
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.AssemblyInfo.cs
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.csproj.CopyComplete
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Command\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Command.pdb

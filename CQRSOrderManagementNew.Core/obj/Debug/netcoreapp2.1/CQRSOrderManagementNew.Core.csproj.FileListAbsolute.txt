@@ -1,0 +1,14 @@
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.deps.json
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.pdb
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.pdb
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\bin\Debug\netcoreapp2.1\Microsoft.Extensions.Configuration.Abstractions.xml
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.csprojAssemblyReference.cache
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.csproj.CoreCompileInputs.cache
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.AssemblyInfoInputs.cache
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.AssemblyInfo.cs
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.csproj.CopyComplete
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.dll
+C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Core\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Core.pdb
