@@ -13,6 +13,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.4.2" />
@@ -22,8 +26,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CQRSOrderManagementNew.Business\CQRSOrderManagementNew.Business.csproj" />
     <ProjectReference Include="..\CQRSOrderManagementNew.Command\CQRSOrderManagementNew.Command.csproj" />
+    <ProjectReference Include="..\CQRSOrderManagementNew.Query\CQRSOrderManagementNew.Query.csproj" />
   </ItemGroup>
 
   <ItemGroup>

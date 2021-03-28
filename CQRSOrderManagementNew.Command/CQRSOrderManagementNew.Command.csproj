@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CQRSOrderManagement.Response\CQRSOrderManagementNew.Response.csproj" />
     <ProjectReference Include="..\CQRSOrderManagementNew.Core\CQRSOrderManagementNew.Core.csproj" />
     <ProjectReference Include="..\CQRSOrderManagementNew.Data\CQRSOrderManagementNew.Data.csproj" />
   </ItemGroup>

@@ -1,0 +1,8 @@
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\bin\Debug\netstandard2.0\CQRSOrderManagementNew.Response.deps.json
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\bin\Debug\netstandard2.0\CQRSOrderManagementNew.Response.dll
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\bin\Debug\netstandard2.0\CQRSOrderManagementNew.Response.pdb
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\obj\Debug\netstandard2.0\CQRSOrderManagementNew.Response.AssemblyInfoInputs.cache
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\obj\Debug\netstandard2.0\CQRSOrderManagementNew.Response.AssemblyInfo.cs
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\obj\Debug\netstandard2.0\CQRSOrderManagementNew.Response.csproj.CoreCompileInputs.cache
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\obj\Debug\netstandard2.0\CQRSOrderManagementNew.Response.dll
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagement.Response\obj\Debug\netstandard2.0\CQRSOrderManagementNew.Response.pdb

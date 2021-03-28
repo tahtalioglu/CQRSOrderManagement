@@ -1,8 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
-using Dapper;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using System;
+using System.Linq;
+using Dapper;
+ 
 
 namespace CQRSOrderManagementNew.Core
 {
@@ -23,12 +27,8 @@ namespace CQRSOrderManagementNew.Core
             }
         }
 
-
-
         public virtual IEnumerable<T> QueryList<T>(string query, object param)
         {
-
-
             var result = Connection.Query<T>(query, param);
             return result;
 
@@ -36,20 +36,25 @@ namespace CQRSOrderManagementNew.Core
 
         public virtual T Query<T>(string query, object param)
         {
-
             var result = Connection.QueryFirst<T>(query, param);
             return result;
-
         }
 
 
-        public void Execute(string sql, object param)
+        public int Execute(string sql, object param)
         {
-
-            Connection.Execute(sql, param);
+            return Connection.Execute(sql, param);
         }
 
+        public async Task<IEnumerable<T>> QueryListAsync<T>(string sql, object param)
+        {
+            return await Connection.QueryAsync<T>(sql, param);
+        }
 
+        public async Task<T> QueryAsync<T>(string query, object param)
+        {
+            return await Connection.QueryFirstAsync<T>(query, param);
+        }
     }
 }
 

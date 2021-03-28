@@ -6,3 +6,11 @@ C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Data\
 C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.AssemblyInfo.cs
 C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.dll
 C:\Users\SANSLI\Source\Repos\CQRSOrderManagementNew\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.pdb
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.deps.json
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.dll
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\bin\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.pdb
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.AssemblyInfoInputs.cache
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.AssemblyInfo.cs
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.dll
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.pdb
+C:\BitBucket\CQRSOrderManagement\CQRSOrderManagementNew.Data\obj\Debug\netcoreapp2.1\CQRSOrderManagementNew.Data.csproj.CoreCompileInputs.cache

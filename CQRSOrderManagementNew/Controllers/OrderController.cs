@@ -1,39 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using CQRSOrderManagementNew.Business;
 using CQRSOrderManagementNew.Command;
 using CQRSOrderManagementNew.Core;
 using CQRSOrderManagementNew.Data;
 using CQRSOrderManagementNew.Model;
-using MassTransit;
-using Microsoft.AspNetCore.Http;
+using CQRSOrderManagementNew.Query;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Configuration;
 
 namespace CQRSOrderManagementNew.Controllers
 {
     public class OrderController : Controller
     {
-        private readonly ISendEndpoint _bus;
-        private readonly IConfiguration _configuration;
-        private readonly IOrderReadManager _orderReadManager;
-        public OrderController(IOrderReadManager orderReadManager, IConfiguration configuration)
+        private readonly IMediator _mediator;
+        public OrderController(IMediator mediator)
         {
-            _orderReadManager = orderReadManager;
-            _configuration = configuration;
-
-            var busControl = new BusConfigurator(_configuration).ConfigureBus();
-            var uriRabbitMq = MqConstants.RabbitMQUri + _configuration["OrderQueueName"];
-            var sendToUri = new Uri(uriRabbitMq);
-
-            _bus = busControl.GetSendEndpoint(sendToUri).Result;
+            _mediator = mediator;
         }
         // GET: Order
         public ActionResult Index()
         {
-            var list = _orderReadManager.GetOrders();
+            IList<OrderMain> list = _mediator.Send(new GetAllOrdersQuery()).Result;
+
             var model = list.Select(p => new OrderModel()
             {
                 Amount = p.Amount,
@@ -49,21 +37,11 @@ namespace CQRSOrderManagementNew.Controllers
         // POST: Order/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(OrderMain order)
+        public ActionResult Create(CreateOrder order)
         {
             try
             {
-                //IOrderCommand createOrderCommand = new CreateOrder(order);
-                IOrderData orderData = new OrderData
-                {
-                    OrderCode = order.OrderCode,
-                    Status =  OrderStatus.Pending.GetDescription(),
-                    Amount = order.Amount,
-                    CommandType = CommandType.Create
-                     
-                };
-                // TODO: Add insert logic here
-                _bus.Send(orderData).Wait();
+                _mediator.Send(order);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -76,10 +54,11 @@ namespace CQRSOrderManagementNew.Controllers
             return View();
         }
 
-        // GET: Order/Edit/5
+        [HttpGet]
         public ActionResult Edit(int id)
         {
-            OrderMain order = _orderReadManager.GetOrderById(id);
+            OrderMain order = _mediator.Send(new GetOrderByIdQuery(id)).Result; 
+
             var model = new OrderModel()
             {
                 OrderId = order.Id,
@@ -94,21 +73,11 @@ namespace CQRSOrderManagementNew.Controllers
         // POST: Order/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, OrderMain order)
+        public ActionResult Edit(int id, UpdateOrder order)
         {
             try
             {
-
-                IOrderData orderData = new OrderData
-                {
-                    Amount = order.Amount,
-                    OrderCode = order.OrderCode,
-                    Status = order.Status.GetDescription(),
-                    CommandType = CommandType.Update,
-                    Id = id
-                };
-                // TODO: Add update logic here
-                _bus.Send(orderData).Wait();
+                _mediator.Send(order);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -118,9 +87,11 @@ namespace CQRSOrderManagementNew.Controllers
         }
 
         // GET: Order/Delete/5
+        [HttpGet]
         public ActionResult Delete(int orderId)
         {
-            OrderMain order = _orderReadManager.GetOrderById(orderId);
+            OrderMain order = _mediator.Send(new GetOrderByIdQuery(orderId)).Result;
+
             return new JsonResult(order);
 
         }
@@ -128,22 +99,12 @@ namespace CQRSOrderManagementNew.Controllers
         // POST: Order/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, OrderMain order)
+        public ActionResult Delete(int id, DeleteOrder order)
         {
             try
             {
-                //IOrderCommand createOrderCommand = new DeleteOrder(id);
-                //// TODO: Add delete logic here
-                IOrderData orderData = new OrderData
-                {
-                    Amount = order.Amount,
-                    OrderCode = order.OrderCode,
-                    Status = order.Status.GetDescription(),
-                    CommandType = CommandType.Delete,
-                    Id = id
-                };
-                // TODO: Add update logic here
-                _bus.Send(orderData).Wait();
+                _mediator.Send(order);
+
                 return RedirectToAction(nameof(Index));
             }
             catch

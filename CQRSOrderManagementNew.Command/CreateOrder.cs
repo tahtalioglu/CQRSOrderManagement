@@ -1,24 +1,18 @@
 ﻿using CQRSOrderManagementNew.Core;
 using CQRSOrderManagementNew.Data;
+using CQRSOrderManagementNew.Response;
+using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace CQRSOrderManagementNew.Command
 {
-    public class CreateOrder : IOrderCommand
+    public class CreateOrder :IRequest<CreateOrderResponseModel>
     {
-        private readonly IOrderData _order;
-
-        public CreateOrder(IOrderData order)
-        {
-            _order = order;
-        }
-        public void ExecuteOrder(IConnection connection)
-        {
-            connection.Execute("Insert Into [Order] Values(@Amount,getdate(),@OrderCode,@Status)", new { Amount = _order.Amount, OrderCode = _order.OrderCode, _order.Status });
-        }
-
+        public decimal Amount { get; set; }
+        public string OrderCode { get; set; }
+        public string Status { get; set; }
 
     }
 }

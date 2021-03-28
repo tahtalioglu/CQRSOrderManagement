@@ -21,7 +21,7 @@ namespace CQRSOrderManagementNew.Business
             _writeStrategy.Write(orderCommand);
         }
 
-        public void InsertOrder(OrderMain order)
+        public void InsertOrder(CreateOrder order)
         {
             IOrderCommand orderCommand = new CreateOrder(new OrderData()
             {
